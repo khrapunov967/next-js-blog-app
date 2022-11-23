@@ -1,17 +1,16 @@
 
-const CommentItem = () => {
+const CommentItem = ({comment}) => {
     return (
-        <div className="w-fit">
+        <div className="w-full max-w-[50%]">
             <div className="p-2 rounded-xl rounded-br-none border-2">
                 <p className="">
-                    Comment Body Comment Body Comment Body Comment Body
-                    Comment Body Comment Body
+                    {comment.body}
                 </p>
             </div>
 
             <div className="w-full flex justify-end">
                 <p className="text-stone-600">
-                    From: user@gmail.com
+                    From: {comment.email}
                 </p>
             </div>
         </div>

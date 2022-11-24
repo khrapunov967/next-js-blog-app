@@ -35,10 +35,14 @@ const PostDetailsPage = async ({params}) => {
             </div>
 
             <div className="w-full max-w-[50%] flex justify-end mb-10">
-                <UserCard user={user} />
+                <UserCard 
+                    user={user} 
+                />
             </div>
 
-            <CommentsContainer comments={comments} />
+            <CommentsContainer 
+                comments={comments} 
+            />
         </section>
   );
 }

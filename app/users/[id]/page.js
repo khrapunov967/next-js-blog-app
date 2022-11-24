@@ -1,8 +1,4 @@
-
-export const fetchUserData = async (id) => {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
-    return response.json();
-};
+import { fetchUserData } from "../../utils/fetch_funcs";
 
 const UserDetailsPage = async ({params}) => {
 

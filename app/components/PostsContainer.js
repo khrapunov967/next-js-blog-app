@@ -1,13 +1,9 @@
+import { fetchPosts } from "../utils/fetch_funcs";
 import PostItem from "./PostItem";
-
-const getPosts = async () => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-    return response.json();
-};
 
 const PostsContainer = async () => {
 
-    const posts = await getPosts();
+    const posts = await fetchPosts();
 
     return (
         <div className="w-full flex flex-wrap gap-7 justify-center">

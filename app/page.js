@@ -1,6 +1,6 @@
 import PostsContainer from "./components/PostsContainer";
 
-const Page = () => {
+const Page = async () => {
     return (
         <section className="flex flex-col items-center w-full max-w-[1600px] my-0 mx-auto ">
             <div className="w-full max-w-[80%] flex flex-col items-center">

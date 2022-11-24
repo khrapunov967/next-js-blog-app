@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { fetchUserData } from "../users/[id]/page";
+import { fetchUserData } from "../utils/fetch_funcs";
 
 const PostItem = async ({post}) => {
     

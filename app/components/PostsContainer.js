@@ -1,10 +1,6 @@
-import { fetchPosts } from "../utils/fetch_funcs";
 import PostItem from "./PostItem";
 
-const PostsContainer = async () => {
-
-    const posts = await fetchPosts();
-
+const PostsContainer = ({posts}) => {
     return (
         <div className="w-full flex flex-wrap gap-7 justify-center">
             {

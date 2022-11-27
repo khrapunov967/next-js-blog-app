@@ -9,7 +9,7 @@ const PostDetailsPage = async ({params}) => {
     const comments = await fetchComments(post.id);
 
     return (
-        <section className="flex flex-col items-center w-full max-w-[1600px] my-0 mx-auto">
+        <section className="flex flex-col items-center w-full max-w-[1600px] my-0 mx-auto pb-10">
             <h2 className="font-bold text-5xl mb-10 text-center">
                 {post.title}
             </h2>
